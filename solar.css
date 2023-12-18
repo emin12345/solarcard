@@ -1,0 +1,89 @@
+
+    body {
+      background-color: rgb(3, 3, 51);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .sun {
+      width: 50px;
+      height: 50px;
+      background-color: #ffcc00;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate-sun 7s linear infinite;
+    }
+
+    .planet {
+      
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+   
+      animation: rotate-sun 500ms  linear infinite;
+    }
+
+    .earth {
+      left: 90px;
+      animation: rotate-sun 500ms linear infinite;
+      background-color: rgb(226, 148, 2);
+      position: absolute;
+    }
+
+    .mars {
+      right: 90px;
+      animation: rotate-sun 500ms linear infinite;
+      background-color: red;
+      position: relative;
+    }
+
+    .jupiter{
+
+        left: 250px;
+        animation: rotate-sun 500ms linear infinite;
+        background-color: rgb(23, 23, 230);
+        position: absolute;
+
+    }
+.mercury{
+
+    right: 300px;
+    animation: rotate-sun 500ms linear infinite;
+    background-color: pink;
+    position: relative;
+
+
+}
+
+.uranus{
+
+    left: 400px;
+    animation: rotate-sun 500ms linear infinite;
+    background-color:purple;
+    position: absolute;
+
+
+}
+
+
+.pluto{
+
+    right: 350px;
+    animation: rotate-sun 500ms linear infinite;
+    background-color: greenyellow;
+    position: relative;
+    
+
+}
+
+
+    @keyframes rotate-sun {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+   
+    
